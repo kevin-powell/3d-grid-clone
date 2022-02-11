@@ -176,6 +176,11 @@ body {
   box-shadow: 0 0 1.5rem hsl(0 0% 100% / 0.8);
 }
 
+.feature-grid img {
+  height:100%;
+  object-fit: fill;
+}
+
 .feature-grid > :nth-child(1),
 .feature-grid > :nth-child(4),
 .feature-grid > :nth-child(5),
