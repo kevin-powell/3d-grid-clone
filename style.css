@@ -145,11 +145,9 @@ body {
 
 .feature-grid-text {
   padding: 1rem;
-  background: linear-gradient(
-    90deg,
-    hsl(255 50% 0% / .8) 75%,
-    hsl(255 50% 50% / 0)
-  );
+  background: linear-gradient(90deg,
+      hsl(255 50% 0% / .8) 75%,
+      hsl(255 50% 50% / 0));
 }
 
 .feature-grid {
@@ -164,34 +162,53 @@ body {
   transform: rotateY(-40deg);
 }
 
-.feature-grid > a {
+.feature-grid>a {
   border-radius: 0.75em;
   transition: transform 350ms ease-in-out;
   overflow: hidden;
 }
 
-.feature-grid > a:hover,
-.feature-grid > a:focus-visible {
+.feature-grid>a:hover,
+.feature-grid>a:focus-visible {
   transform: scale(1.1);
   box-shadow: 0 0 1.5rem hsl(0 0% 100% / 0.8);
 }
 
-.feature-grid > :nth-child(1),
-.feature-grid > :nth-child(4),
-.feature-grid > :nth-child(5),
-.feature-grid > :nth-child(7) {
+.feature-grid> :nth-child(1),
+.feature-grid> :nth-child(4),
+.feature-grid> :nth-child(5),
+.feature-grid> :nth-child(7) {
   grid-row: span 3;
 }
 
-.feature-grid > :nth-child(2),
-.feature-grid > :nth-child(3) {
+.feature-grid> :nth-child(2),
+.feature-grid> :nth-child(3) {
   grid-row: span 2;
 }
 
-.feature-grid > :nth-child(6) {
+.feature-grid> :nth-child(6) {
   grid-column: 2 / span 2;
   grid-row: 3 / span 4;
 }
 
+.mt {
+  margin-top: 2rem;
+}
 
+.btn-style {
+  text-decoration: none;
+  color: #fff;
+  padding: 1rem;
+  background-color: var(--clr-primary);
+  border-radius: 10px;
+  font-weight: 600;
+}
 
+.btn2-style{
+  text-decoration: none;
+  color: var(--clr-primary);
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  font-weight: 600;
+}
